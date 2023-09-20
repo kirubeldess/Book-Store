@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/27e37ebc61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img width="110px" height="110px" src="images/pngegg.png" alt=""></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Books</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html">
+                    <div class="cart">
+                        <i class="bi bi-cart2"></i>
+                        <div id="cartAmount" class="cartAmount">0</div>
+                    </div>
+                </a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+
+            <div class="row">
+                <div class="col2">
+                    <h1>Become a Member of <br> Our Book Club.</h1>
+                <p> Unlock the world of knowledge and embark on literary adventures <br> with fellow book lovers!
+                </p>
+                <a href="" class="btn">Sign Up Now <i class="bi bi-arrow-right"></i></a>
+                </div>
+                
+                
+            </div>
+
+        </div>
+    </div>
+
+    <div class="trending">
+        <h3>Trending Books</h3>
+        <p>Here Are the Trending Books Out There</p>
+    </div>
+
+    <div class="books" id="books">
+        <div class="prod">
+            <img src="images/the-connections-in-our-brain.jpg" alt="" width="200" height="297px">
+            <div class="details">
+                <h3>The Connections In Our Brain</h3>
+                <span>Curtis Hewitt</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="prod">
+            <img src="images/rabbit-hatch.jpg" alt="" width="200">
+            <div class="details">
+                <h3>The Rabbit Hutch</h3>
+                <span>Tess Gunty</span>
+                <div class="star">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="prod">
+            <img src="images/valleyesque.jpg" alt="" width="200">
+            <div class="details">
+                <h3>valleyesque</h3>
+                <span>Fernando Flores</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+
+        <div class="prod">
+            <img src="images/bliss montage.jpg" alt="" width="200">
+            <div class="details">
+                <h3>Bliss Montage</h3>
+                <span>Ling Ma</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                </div>
+                
+                
+            </div>
+        </div>
+       
+    </div>
+ 
+
+    <div class="latest">
+        <div class="textt"><h2>Latest Release</h2></div>
+        <div class="latest-book">
+            <img src="images/ma and me.jpeg" alt="" >
+            <div class="latest-desc">
+                <h3>Ma And Me</h3>
+                <span>By Putsata Reang</span>
+                <div class="star">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                </div>
+                <p>The book tells a story of a mother-daughter relationship and their experiences <br> coming to America as refugees from the Cambodian civil war in the 1970s. <br> In 1975, when Reang was a baby, her mother carried her onto one of the <br> last boats out of war-torn Cambodia, fleeing the Khmer Rouge's murderous <br> regime.</p>
+                <a href="" class="btn">Get Book Now <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials">
+        <h1>What Our Customers Say</h1>
+        <div class="roww">
+           <div class="testimonial-col">
+            <img src="images/kir-atk.jpg" >
+            <div>
+                <p>I've Never Read a Book in My Entire Life.</p>
+                <h3>-Kirubel Ateka</h3>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                
+            </div>
+           </div> 
+           <div class="testimonial-col">
+            <img src="images/kirubel-dag.jpg">
+            <div>
+                <p>I like Turtles.</p>
+                <h3>-Kirubel Dagnachew</h3>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+           </div>
+           <div class="testimonial-col">
+            <img src="images/cris.png">
+            <div>
+                <p>Muchos Gracias Affectio Siuuuuuuuu.</p>
+                <h3>-Cristiano Ronaldo</h3>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+    <div class="footer">
+        <div class="contact">
+            <div class="icons">
+                <h3>Contact Us</h3>
+                <i class="bi bi-facebook">Facebook</i>
+                <i class="bi bi-instagram">Instagram</i>
+                <i class="bi bi-twitter">Twitter</i>
+                <i class="bi bi-telegram">Telegram</i>
+            </div>
+
+            <div class="adress">
+                <h3>Addis Ababa,Ethiopia</h3>
+                <span>Africa Avenue</span>
+            </div>
+
+            
+
+            <div class="adress">
+                <h3>FAQ</h3>
+                <span>Return Policy</span>
+            </div>
+
+            <div class="adress">
+                <h3>Newsletter</h3>
+                <span>Subscribe To Our Newsletter.</span>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+</body>
+<script></script>
+</html>
