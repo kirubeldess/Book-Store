@@ -153,6 +153,7 @@ nav p{
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    margin-left: -10px;
 }
 .details h3{
     color: #092a43;
