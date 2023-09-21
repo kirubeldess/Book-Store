@@ -1,7 +1,7 @@
 let shop = document.getElementById('shop');
 
 let shopItemsData = [{
-    id:"b-1",
+    id:"b1",
     name:"Thrust",
     author:"By Lidia Yuknavitch",
     price:120,
@@ -13,7 +13,7 @@ let shopItemsData = [{
     ratinga: ""
     
 },{
-    id:"b-2",
+    id:"b2",
     name:"Joan",
     author:"By Katherine j.",
     price:125,
@@ -24,7 +24,7 @@ let shopItemsData = [{
     ratingb:"bi-star-fill",
     ratinga: "bi-star-half"
 },{
-    id:"b-3",
+    id:"b3",
     name:"The Book of Goose",
     author:"By Yiyun Li",
     price:140,
@@ -35,7 +35,7 @@ let shopItemsData = [{
     ratingb:"bi-star-fill",
     ratinga:"bi-star-fill"
 },{
-    id:"b-4",
+    id:"b4",
     name:"Olga Dies Dreaming",
     author:"By Xochitl Gonzalez",
     price:110,
@@ -47,7 +47,8 @@ let shopItemsData = [{
     ratinga: "bi-star-half"
 }];
 
-
+let basket = [];
+    
 
 let generateShop = ()=>{
     return (shop.innerHTML= shopItemsData.map((x)=>{
@@ -68,9 +69,9 @@ let generateShop = ()=>{
                         <div class="price-quantity">
                             <h2>${price} Birr</h2>
                             <div class="buttons">
-                                <i class="bi bi-dash-lg"></i>
+                                <i onclick="decrement(${id})" class="bi bi-dash-lg"></i>
                                 <div id=${id} class="quantity">0</div>
-                                <i class="bi bi-plus-lg"></i>
+                                <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
                             </div>
                             
                         </div>
@@ -81,3 +82,40 @@ let generateShop = ()=>{
 }
 generateShop();
 
+let increment = (id)=>{
+    let selectedItem = id;
+
+    let search = basket.find((x)=> x.id === selectedItem.id);
+
+    if(search === undefined){
+        basket.push({
+            id:selectedItem.id,
+            item:1,
+        });
+    }
+    else{
+        search.item += 1;
+    }
+
+   
+    console.log(basket);
+
+}
+
+let decrement = (id)=>{
+    let selectedItem = id;
+    let search = basket.find((x)=> x.id === selectedItem.id);
+
+    if(search.item === 0) return;
+    else{
+        search.item -= 1;
+    }
+
+   
+    console.log(basket);
+
+}
+
+let update = ()=>{
+
+}
