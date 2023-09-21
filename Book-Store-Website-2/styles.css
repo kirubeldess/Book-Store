@@ -408,6 +408,7 @@ nav p{
 }
 .item img{
     border-radius: 2px;
+    height: 300px;
 }
 .details p{
     color: #092a43;
