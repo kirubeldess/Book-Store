@@ -333,10 +333,10 @@ nav p{
     
 }
 
-
+/* /* 
 /* books */
 .books-header {
-    background: linear-gradient(to bottom, rgb(249, 188, 108), transparent); /* Initial gradient */
+    background: linear-gradient(to bottom, rgb(136, 135, 134), transparent); /* Initial gradient */
     animation: fadeBackground 1s linear infinite; /* Animation with a 5-second duration that repeats infinitely */
 }
 
@@ -348,6 +348,53 @@ nav p{
         background-position: 0% 100%; /* End at the bottom */
     }
 }
+
+.books-1 {
+    display: grid;
+    grid-template-columns: 25% 70%; /* 20% for .genres, 80% for .books-list */
+    gap: 20px; /* Adjust the gap between columns as needed */
+    margin-top: 50px;
+}
+.genres{
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.genres h2{
+    margin-bottom: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #346d9b;
+    color: antiquewhite;
+}
+.genres span{
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #092a43;
+}
+
+.shop{
+    display: grid;
+    grid-template-columns: repeat(4,22%);
+    gap: 30px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price-quantity h2{
+    font-size: 16px;
+    color: #092a43;
+}
+.item img{
+    border-radius: 2px;
+}
+.details p{
+    color: #092a43;
+    font-size: small;
+}
+
+
 
 
 
