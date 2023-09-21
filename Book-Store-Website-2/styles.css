@@ -377,6 +377,26 @@ nav p{
     grid-template-columns: repeat(4,22%);
     gap: 30px;
 }
+@media(max-width:1200px){
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(2,40%);
+        gap: 30px;
+    }
+    .item img{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    .shop{
+        display: grid;
+        grid-template-columns: repeat(1,90%);
+    }
+    .item img{
+        width: 100%;
+    }
+}
+
 .price-quantity{
     display: flex;
     justify-content: space-between;
@@ -392,6 +412,9 @@ nav p{
 .details p{
     color: #092a43;
     font-size: small;
+}
+.st{
+    display: flex;
 }
 
 
