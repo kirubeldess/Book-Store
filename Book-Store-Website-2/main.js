@@ -1,51 +1,6 @@
 let shop = document.getElementById('shop');
 
-let shopItemsData = [{
-    id:"b1",
-    name:"Thrust",
-    author:"By Lidia Yuknavitch",
-    price:120,
-    img:"images/b-1 Thrust Lidia Yuknavitch.jpg",
-    ratinge:"bi-star-fill",
-    ratingd:"bi-star-fill",
-    ratingc:"bi-star-fill",
-    ratingb:"bi-star-fill",
-    ratinga: ""
-    
-},{
-    id:"b2",
-    name:"Joan",
-    author:"By Katherine j.",
-    price:125,
-    img:"images/b-2 Joan Katherine J..jpg",
-    ratinge:"bi-star-fill",
-    ratingd:"bi-star-fill",
-    ratingc:"bi-star-fill",
-    ratingb:"bi-star-fill",
-    ratinga: "bi-star-half"
-},{
-    id:"b3",
-    name:"The Book of Goose",
-    author:"By Yiyun Li",
-    price:140,
-    img:"images/b-3 The Book Of Goose Yiyun Li.jpg",
-    ratinge:"bi-star-fill",
-    ratingd:"bi-star-fill",
-    ratingc:"bi-star-fill",
-    ratingb:"bi-star-fill",
-    ratinga:"bi-star-fill"
-},{
-    id:"b4",
-    name:"Olga Dies Dreaming",
-    author:"By Xochitl Gonzalez",
-    price:110,
-    img:"images/b-4 Olga Dies Dreaming Xochitl Gonzalez.jpg",
-    ratinge:"bi-star-fill",
-    ratingd:"bi-star-fill",
-    ratingc:"bi-star-fill",
-    ratingb:"bi-star-fill",
-    ratinga: "bi-star-half"
-}];
+
 
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
@@ -99,9 +54,10 @@ let increment = (id)=>{
         search.item += 1;
     }
 
-   localStorage.setItem("data",JSON.stringify(basket));
     // console.log(basket);
     update(selectedItem.id);
+    localStorage.setItem("data",JSON.stringify(basket));
+
 
 }
 
@@ -109,7 +65,8 @@ let decrement = (id)=>{
     let selectedItem = id;
     let search = basket.find((x)=> x.id === selectedItem.id);
 
-    if(search.item === 0) return;
+    if(search === undefined)return;
+    else if(search.item === 0) return;
     else{
         search.item -= 1;
     }
@@ -117,8 +74,12 @@ let decrement = (id)=>{
    
     // console.log(basket);
 
-    localStorage.setItem("data",JSON.stringify(basket));
     update(selectedItem.id);
+
+    basket = basket.filter((x)=>x.item !== 0);
+
+    localStorage.setItem("data",JSON.stringify(basket));
+
 
 }
 
