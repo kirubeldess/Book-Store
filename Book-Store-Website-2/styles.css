@@ -13,6 +13,7 @@
     margin-bottom: 30px;
     
 }
+
 i{
     cursor: pointer;
 }
@@ -96,6 +97,7 @@ nav p{
     color: antiquewhite;
     font-size: 18px;
 }
+
 .btn{
     display: inline-block;
     background: #092a43;
@@ -488,7 +490,8 @@ nav p{
     margin-top: 10px;
 }
 
-
-
+.cart a{
+    color: #092a43;
+}
 
 
