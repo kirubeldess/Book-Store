@@ -12,13 +12,14 @@
     position: absolute;
 }
 .form-box{
+   
     width: 380px;
     height: 430px;
     position: relative;
-    margin: 6% auto;
+    margin: 30px auto;
     background: rgb(221, 225, 233);
-    /* border: 2px solid rgba(255,255,255,.2);
-    backdrop-filter: blur(5px); */
+     /* border: 2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(5px);  */
     padding: 5px;
     overflow: hidden;
     border-radius: 10px;
@@ -86,7 +87,8 @@
     width: 85%;
     padding: 10px 30px;
     cursor: pointer;
-    margin: auto;
+    margin-top: -10px;
+    margin-bottom: 11px;
     background: linear-gradient(to right,#17405f,#336b97);
     color: white;
     border: 0;
