@@ -115,7 +115,15 @@ nav p{
     font-weight: bold;
 }
 
-
+@media (max-width: 1000px){
+    .logo,.row{
+        margin-left:-40px ;
+    }
+    .col2 h1{
+        font-size: 46px;
+        margin-top: -5px;
+    }
+}
 
 /* ! for book items style */
 .trending h3{
@@ -173,11 +181,9 @@ nav p{
 .star{
     display: flex;
 }
-.bi-star-fill{
-    color: rgb(232, 184, 65);
-}
-.bi-star-half{
-    color: rgb(232, 184, 65);
+
+.bi-star,.bi-star-half,.bi-star-fill{
+    color:rgb(232, 184, 65);
 }
 
 .buttons{
