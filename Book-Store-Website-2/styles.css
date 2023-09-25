@@ -34,6 +34,7 @@ a{
     font-size: 30px;
     padding: 5px;
     border-radius: 4px;
+    margin-right: 20px;
 }
 .cartAmount{
     position: absolute;
@@ -122,6 +123,12 @@ nav p{
     .col2 h1{
         font-size: 46px;
         margin-top: -5px;
+    }
+    .cart{
+        margin-right: -7px;
+    }
+    .buttons{
+        margin-right: -12px;
     }
 }
 
@@ -370,10 +377,11 @@ nav p{
     margin-top: 50px;
 }
 .genres{
-    margin-left: 60px;
+    margin-left: 30px;
     display: flex;
     flex-direction: column;
 }
+
 .genres h2{
     margin-bottom: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -385,7 +393,12 @@ nav p{
     cursor: pointer;
     color: #092a43;
 }
-
+@media(max-width:700){
+    .genres h2{
+        margin-left: -80%;
+    }
+    
+}
 .shop{
     display: grid;
     grid-template-columns: repeat(4,22%);
@@ -404,10 +417,13 @@ nav p{
 @media(max-width:500px){
     .shop{
         display: grid;
-        grid-template-columns: repeat(1,90%);
+        grid-template-columns: repeat(1,85%);
     }
     .item img{
         width: 100%;
+    }
+    .item{
+        margin-left: 40px;
     }
 }
 
