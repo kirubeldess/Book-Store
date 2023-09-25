@@ -454,6 +454,7 @@ nav p{
 .text-center{
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 30px;
 }
 .HomeBtn{
     background-color: #092a43;
@@ -475,11 +476,10 @@ nav p{
     display: grid;
     grid-template-columns: repeat(1,320px);
     justify-content: center;
-    gap: 15px;
 }
 .cart-item{
-    border: 2px solid black;
-    border-radius: 5px;
+    border: 1px solid #d6d6da;
+    border-radius: 2px;
     display: flex;
 }
 .title-price-x{
@@ -493,27 +493,45 @@ nav p{
     align-items: center;
     gap: 10px;
 }
-
+.details h3{
+    margin-top: 15px;
+}
 .cart-item-price {
    /* add background */
     /* background-color: #092a43;
     color: white; */
     border-radius: 4px;
     padding: 3px 6px;
+} 
+.text-center h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
-.checkout, 
 .removeAll{
-    background-color: #092a43;
+    background-color: #395e7a;
     color: white;
     border: none;
-    padding: 6px;
-    border-radius: 3px;
+    padding: 8px;
+    border-radius: 8px;
     cursor: pointer;
     margin-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
+.purchase{
+    background-color: #092a43;
+    color: #f4f6f2;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 
+}
 .cart a{
     color: #092a43;
 }
 
-
+.details{
+    margin-left: 5px;
+}
