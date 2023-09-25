@@ -23,7 +23,6 @@ let calculation = ()=>{
                     <div class="title-price-x">
                       <h4 class="title-price">
                         <p>${name}</p>
-                        <p class="cart-item-price"> ${price} Birr </p>
                       </h4>
                       <i onclick="removeItem(${id})" class="bi bi-x-lg"></i>
                     </div>
@@ -32,7 +31,7 @@ let calculation = ()=>{
                         <div id=${id} class="quantity">${item}</div>
                         <i onclick="increment(${id})" class="bi bi-plus-lg"></i>
                     </div>
-                    <h3> ${item * price}</h3>
+                    <h3> ${item * price} Birr</h3>
                 </div>
             </div>
             `
@@ -131,9 +130,11 @@ let totalAmount = ()=>{
         console.log(amount);
         label.innerHTML  = `
             <h2>Total Bill : ${amount} Birr</h2>
-            <button class="checkout">Checkout</button>
             <button onclick="clearCart()" class= "removeAll">Clear Cart</button>
+            <div><br></div>
+            <button class="purchase"> Purchase Now </button>
         `
+        
     }else return;
 }
 totalAmount();
